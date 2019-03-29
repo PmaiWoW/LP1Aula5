@@ -35,6 +35,18 @@ namespace MyFirstMethod
                 Console.WriteLine(i);
             }
         }
+
+        static void CountToN(int n1, int n2)
+        {
+            //ciclo for que mostra o número da Count que usa os argumentos
+            //dados ao chamar a função
+            for (int i = n1; i <= n2; i++)
+            {
+                //mostrar o número da count atual
+                Console.WriteLine(i);
+            }
+        }
+
         
         /// <summary>
         /// Core code inserted here, in this case the previous methods are 
@@ -52,6 +64,11 @@ namespace MyFirstMethod
             //invocar método CountToN duas vezes com valores diferentes
             CountToN(4);
             CountToN(7);
+
+            //invocar método CountToN duas vezes com valores de começo e fim
+            //diferentes para cada
+            CountToN(4, 9);
+            CountToN(2, 6);
         }
     }
 }
